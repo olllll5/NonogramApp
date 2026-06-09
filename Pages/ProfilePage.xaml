@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NonogramApp.Pages.ProfilePage"
+             Title="Личный кабинет">
+
+    <VerticalStackLayout Padding="30" Spacing="15">
+        <Frame CornerRadius="50" HeightRequest="100" WidthRequest="100" Padding="0" HorizontalOptions="Center">
+            <Image Source="avatar_placeholder.png" Aspect="AspectFill"/>
+        </Frame>
+
+        <Entry Placeholder="Никнейм" Text="{Binding Nickname}" />
+        <Entry Placeholder="Логин (Email)" Text="{Binding Email}" />
+        <Entry Placeholder="Новый пароль" IsPassword="True" />
+
+        <Button Text="СОХРАНИТЬ ИЗМЕНЕНИЯ" Margin="0,20,0,0" Clicked="OnSaveClicked" />
+        <Button Text="ВЫЙТИ ИЗ АККАУНТА" BackgroundColor="IndianRed" Clicked="OnLogoutClicked" />
+        
+        <Label Text="Демо-режим: прогресс сохраняется автоматически" 
+               FontSize="12" TextColor="Gray" HorizontalOptions="Center" Margin="0,20,0,0"/>
+    </VerticalStackLayout>
+</ContentPage>

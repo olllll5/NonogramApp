@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:NonogramApp.Pages"
+       x:Class="NonogramApp.AppShell">
+
+    <TabBar>
+        <ShellContent Title="Меню" 
+                      ContentTemplate="{DataTemplate local:MainPage}" 
+                      Icon="menu_icon.png" />
+
+        <ShellContent Title="Профиль" 
+                      ContentTemplate="{DataTemplate local:ProfilePage}" 
+                      Icon="user_icon.png" />
+    </TabBar>
+
+</Shell>
